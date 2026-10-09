@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdus Samad — Software Developer & Full-Stack Engineer</title>
+  <meta name="description" content="Portfolio of Abdus Samad, a software developer based in India building thoughtful digital products, full-stack web applications, and practical AI integrations.">
+  <meta name="keywords" content="Abdus Samad, Software Engineer, Full Stack Developer, MERN Stack, React, Node.js, AI Applications, Portfolio">
+  <meta name="author" content="Abdus Samad">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abdus Samad — Software Developer">
+  <meta property="og:description" content="Building thoughtful digital products that look considered, work reliably, and solve real problems.">
+  <meta property="og:image" content="assets/flux_hero.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✦</text></svg>">
+
+  <!-- Google Fonts: Archivo, Inter, Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,900&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- EmailJS Browser SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="email-config.js"></script>
+</head>
+<body data-theme="cream">
+  <!-- Custom Magnetic Cursor -->
+  <div class="custom-cursor" id="customCursor" aria-hidden="true"></div>
+  <div class="custom-cursor-dot" id="customCursorDot" aria-hidden="true"></div>
+
+  <!-- Film Grain Overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- FLOATING PILL NAVBAR -->
+  <header class="navbar-wrapper">
+    <nav class="pill-navbar" id="pillNavbar" aria-label="Main Navigation">
+      <a href="#hero-section" class="nav-brand">
+        <span class="status-indicator" title="Available for projects"></span>
+        <span class="brand-text">Abdus Samad</span>
+      </a>
+
+      <div class="nav-links-desktop">
+        <a href="#hero-section" class="nav-link active">Home</a>
+        <a href="#about-section" class="nav-link">About</a>
+        <a href="#services-section" class="nav-link">Services</a>
+        <a href="#work-section" class="nav-link">Works</a>
+        <a href="#contact-section" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="icon-btn theme-toggle" id="themeToggle" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <!-- Mobile Menu Trigger -->
+        <button class="icon-btn menu-btn" id="menuToggle" aria-label="Toggle Mobile Menu">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </button>
+
+        <a href="#contact-section" class="pill-cta">Let's Talk</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation Dropdown -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <a href="#hero-section" class="mobile-link">Home</a>
+      <a href="#about-section" class="mobile-link">About</a>
+      <a href="#services-section" class="mobile-link">Services</a>
+      <a href="#work-section" class="mobile-link">Works</a>
+      <a href="#contact-section" class="mobile-link">Contact</a>
+      <div class="mobile-contact-bar">
+        <a href="tel:+919608121613" class="mobile-call-btn">📞 +91 96081 21613</a>
+        <a href="https://wa.me/919608121613" target="_blank" rel="noopener noreferrer" class="mobile-wa-btn">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- 4. HERO SECTION -->
+    <section class="hero-section" id="hero-section">
+      <div class="container hero-container">
+        
+        <!-- Oversized Typographic Introduction -->
+        <div class="hero-title-wrap">
+          <h1 class="hero-main-title">
+            <span class="title-line title-line-1">
+              <span class="hero-star" aria-hidden="true">
+                <svg viewBox="0 0 100 100" fill="currentColor">
+                  <path d="M50 0 C50 30 70 50 100 50 C70 50 50 70 50 100 C50 70 30 50 0 50 C30 50 50 30 50 0 Z"></path>
+                </svg>
+              </span>
+              SOFTWARE
+            </span>
+            <span class="title-line title-line-2">
+              ENGINEER
+              <span class="hero-bolt" aria-hidden="true">⚡</span>
+            </span>
+          </h1>
+        </div>
+
+        <!-- Hero Sub-Row: Year, Centered Portrait, Metadata & CTAs -->
+        <div class="hero-subrow">
+          
+          <!-- Left: Year -->
+          <div class="hero-year-col">
+            <span class="year-label">©2026</span>
+          </div>
+
+          <!-- Center: Portrait Picture with Aspect-Preserved Frame -->
+          <div class="hero-avatar-col">
+            <div class="avatar-card" id="avatarCard" title="Click to view portrait in high resolution">
+              <div class="avatar-inner">
+                <img 
+                  src="assets/samad_portrait.jpg" 
+                  alt="Portrait of Abdus Samad — Software Developer"
+                  class="avatar-img"
+                  id="avatarImg"
+                >
+                <div class="avatar-hover-tag">
+                  <span class="heart-pulse">♥</span>
+                  <span>Abdus Samad</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Creator Info & Clean Pills -->
+          <div class="hero-meta-col">
+            <div class="meta-tag-line">/CREATING SINCE 2022</div>
+            <div class="hero-pill-badges">
+              <a href="https://github.com/abdussamad567" target="_blank" rel="noopener noreferrer" class="badge-pill" title="GitHub Profile">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/abdus-samad-7ba928380" target="_blank" rel="noopener noreferrer" class="badge-pill" title="LinkedIn Profile">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+              <a href="tel:+919608121613" class="badge-pill highlight-pill" title="Direct Phone">
+                <span class="live-dot"></span>
+                <span>+91 96081 21613</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hero Editorial Lead & Primary Calls to Action -->
+        <div class="hero-intro-strip">
+          <p class="hero-bio-summary">
+            I'm <strong>Abdus Samad</strong>, a software developer based in India building modern websites, full-stack applications, and AI-powered products.
+          </p>
+          <div class="hero-actions">
+            <a href="#work-section" class="btn-primary">
+              <span>View My Work</span>
+              <span class="btn-arrow">↓</span>
+            </a>
+            <a href="#contact-section" class="btn-secondary">
+              <span>Let's Talk</span>
+              <span class="btn-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. ABOUT SECTION -->
+    <section class="bio-section" id="about-section">
+      <div class="container bio-container">
+        
+        <div class="bio-grid">
+          <!-- Left Column -->
+          <div class="bio-col-left">
+            <span class="bio-greeting">HEY!</span>
+            <h2 class="bio-lead">
+              I’m <strong>Abdus Samad</strong>, a software developer based in India.
+            </h2>
+            <div class="bio-portrait-preview">
+              <img 
+                src="assets/samad_portrait.jpg" 
+                alt="Abdus Samad portrait photo"
+                class="bio-inline-photo zoomable-img"
+              >
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="bio-col-right">
+            <p class="bio-body">
+              I focus on building thoughtful interfaces, practical full-stack applications, and responsive design. My work centers on clean code architecture, intuitive user flows, and useful AI integrations that make digital tools faster and easier to use.
+            </p>
+            <p class="bio-body">
+              My core technical foundation spans the MERN ecosystem (React, Node.js, Express, MongoDB), modern frontend design systems with Tailwind CSS, and scalable REST API development. I enjoy taking ideas from initial concept to reliable production deployment.
+            </p>
+            <div class="bio-actions">
+              <a href="#work-section" class="btn-primary">
+                <span>Explore Projects</span>
+                <span class="btn-arrow">↗</span>
+              </a>
+              <button class="btn-secondary copy-phone-btn" data-phone="+919608121613" title="Copy Phone Number">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span class="phone-text">Call: +91 96081 21613</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. EDITORIAL STATEMENT -->
+    <section class="statement-section">
+      <div class="container">
+        <div class="statement-card">
+          <blockquote class="statement-quote">
+            <span class="highlight-word">From idea to launch.</span> Building thoughtful digital products that look considered, work reliably, and solve real problems.
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. TECHNICAL EXPERTISE (4 REFINED DARK CARDS) -->
+    <section class="stack-section">
+      <div class="container">
+        <div class="stack-grid">
+          
+          <!-- Card 1: Frontend Development -->
+          <div class="stack-card">
+            <div class="stack-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="2.5" fill="currentColor"/>
+                <ellipse cx="12" cy="12" rx="10" ry="4"/>
+                <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/>
+                <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/>
+              </svg>
+            </div>
+            <div class="stack-card-content">
+              <h3 class="stack-title">Frontend Development</h3>
+              <p class="stack-desc">React, JavaScript (ES6+), responsive interfaces, Tailwind CSS, component architecture, and fluid layouts.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Backend Development -->
+          <div class="stack-card">
+            <div class="stack-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <div class="stack-card-content">
+              <h3 class="stack-title">Backend Development</h3>
+              <p class="stack-desc">Node.js, Express.js, REST APIs, JSON Web Tokens (JWT) authentication, middleware, and backend logic.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Databases -->
+          <div class="stack-card">
+            <div class="stack-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+              </svg>
+            </div>
+            <div class="stack-card-content">
+              <h3 class="stack-title">Databases</h3>
+              <p class="stack-desc">MongoDB, Mongoose schemas, document modeling, data validation, indexing, and efficient queries.</p>
+            </div>
+          </div>
+
+          <!-- Card 4: AI & Modern Tools -->
+          <div class="stack-card">
+            <div class="stack-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="3" width="18" height="18" rx="4"/>
+                <path d="M9 9h6v6H9z"/>
+                <path d="M3 9h3m12 0h3M3 15h3m12 0h3M9 3v3m6-3v3M9 18v3m6-3v3"/>
+              </svg>
+            </div>
+            <div class="stack-card-content">
+              <h3 class="stack-title">AI &amp; Modern Tools</h3>
+              <p class="stack-desc">Practical AI integrations, LLM experimentation, OpenAI and Gemini APIs, Git, Vite, and workflow automation.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. SERVICES SECTION -->
+    <section class="services-section" id="services-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="header-left">
+            <span class="section-tag">/SERVICES</span>
+            <h2 class="section-title">Services</h2>
+          </div>
+          <div class="header-right">
+            <p class="section-desc">Tailored engineering services focused on building clean, high-performance web applications and digital tools.</p>
+          </div>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Service 01 -->
+          <div class="service-card">
+            <div class="service-top">
+              <span class="service-num">01</span>
+              <h3 class="service-name">Full-Stack Web Development</h3>
+            </div>
+            <p class="service-detail">
+              Custom web applications, responsive frontend interfaces, backend APIs, database integration, and secure user authentication. End-to-end architecture built with maintainable code standards.
+            </p>
+            <div class="service-pills">
+              <span class="s-pill">MERN Stack</span>
+              <span class="s-pill">React.js</span>
+              <span class="s-pill">Node &amp; Express</span>
+              <span class="s-pill">MongoDB</span>
+              <span class="s-pill">REST APIs</span>
+            </div>
+          </div>
+
+          <!-- Service 02 -->
+          <div class="service-card">
+            <div class="service-top">
+              <span class="service-num">02</span>
+              <h3 class="service-name">Website Design &amp; Development</h3>
+            </div>
+            <p class="service-detail">
+              Professional business websites, high-converting landing pages, portfolio sites, and responsive company web presences designed with modern typography, generous whitespace, and fast load times.
+            </p>
+            <div class="service-pills">
+              <span class="s-pill">Modern UI</span>
+              <span class="s-pill">Tailwind CSS</span>
+              <span class="s-pill">Responsive Layouts</span>
+              <span class="s-pill">Web Performance</span>
+            </div>
+          </div>
+
+          <!-- Service 03 -->
+          <div class="service-card">
+            <div class="service-top">
+              <span class="service-num">03</span>
+              <h3 class="service-name">AI-Powered Applications</h3>
+            </div>
+            <p class="service-detail">
+              Practical AI integrations, AI-enabled product tools, interactive chatbot interfaces, and smart workflow automation that enhance existing web products and deliver tangible utility.
+            </p>
+            <div class="service-pills">
+              <span class="s-pill">OpenAI &amp; Gemini APIs</span>
+              <span class="s-pill">Prompt Engineering</span>
+              <span class="s-pill">Smart Assistants</span>
+              <span class="s-pill">Automation</span>
+            </div>
+          </div>
+
+          <!-- Service 04 -->
+          <div class="service-card">
+            <div class="service-top">
+              <span class="service-num">04</span>
+              <h3 class="service-name">Deployment &amp; Maintenance</h3>
+            </div>
+            <p class="service-detail">
+              Deployment assistance, domain configuration, hosting setup on modern cloud platforms, speed and performance optimizations, and ongoing codebase maintenance to ensure 99.9% reliability.
+            </p>
+            <div class="service-pills">
+              <span class="s-pill">Vercel &amp; Cloud</span>
+              <span class="s-pill">Git &amp; GitHub</span>
+              <span class="s-pill">Domain DNS</span>
+              <span class="s-pill">Performance Tuning</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. FEATURED PROJECTS SECTION -->
+    <section class="work-section" id="work-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="header-left">
+            <span class="section-tag">/PORTFOLIO</span>
+            <h2 class="section-title">Featured Projects</h2>
+          </div>
+          <div class="header-right">
+            <a href="https://github.com/abdussamad567" target="_blank" rel="noopener noreferrer" class="view-all-link">
+              <span>View All Repositories on GitHub</span>
+              <span class="link-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="projects-list">
+          
+          <!-- PROJECT 01: FitForge -->
+          <article class="project-card highlight-card">
+            <div class="project-media-wrap">
+              <div class="project-browser-bar">
+                <div class="browser-dots">
+                  <span class="b-dot red"></span>
+                  <span class="b-dot yellow"></span>
+                  <span class="b-dot green"></span>
+                </div>
+                <div class="browser-url-pill">
+                  <span>https://earnest-begonia-0f18f2.netlify.app/</span>
+                </div>
+                <span class="browser-badge">Project 01</span>
+              </div>
+              <div class="project-img-container">
+                <img 
+                  src="assets/fitforge_preview.png" 
+                  alt="FitForge — Premium Fitness Studio Website Screenshot"
+                  class="project-preview-img zoomable-img"
+                >
+                <div class="project-overlay-pill">
+                  <span>✦ 1st Featured Project</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info-wrap">
+              <div class="project-meta-top">
+                <span class="project-category">Fitness &amp; Health Tech</span>
+                <span class="project-year">2026</span>
+              </div>
+              
+              <h3 class="project-title">FitForge — Premium Fitness Studio</h3>
+              
+              <p class="project-desc">
+                A modern, high-impact fitness studio web application designed with a bold dark aesthetic and clear visual hierarchy. Features structured training programs, membership tiers, expert trainer rosters, and interactive class schedules engineered for high conversion and effortless user booking.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tag">React</span>
+                <span class="tag">JavaScript (ES6+)</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">Modern UI/UX</span>
+                <span class="tag">Responsive Design</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://earnest-begonia-0f18f2.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                  <span>Live Website</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+                <a href="https://github.com/abdussamad567" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                  <span>GitHub Profile</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: Vanya Heritage -->
+          <article class="project-card">
+            <div class="project-media-wrap">
+              <div class="project-browser-bar">
+                <div class="browser-dots">
+                  <span class="b-dot red"></span>
+                  <span class="b-dot yellow"></span>
+                  <span class="b-dot green"></span>
+                </div>
+                <div class="browser-url-pill">
+                  <span>https://vanyaheritage.netlify.app/</span>
+                </div>
+                <span class="browser-badge">Project 02</span>
+              </div>
+              <div class="project-img-container">
+                <img 
+                  src="assets/vanya_heritage_preview.png" 
+                  alt="Vanya Heritage — Luxury Indian Handloom Sarees & Bridal Ethnic Wear Screenshot"
+                  class="project-preview-img zoomable-img"
+                >
+              </div>
+            </div>
+
+            <div class="project-info-wrap">
+              <div class="project-meta-top">
+                <span class="project-category">Luxury E-Commerce &amp; Atelier</span>
+                <span class="project-year">2026</span>
+              </div>
+              
+              <h3 class="project-title">Vanya Heritage — Luxury Handloom Atelier</h3>
+              
+              <p class="project-desc">
+                An opulent luxury e-commerce brand experience for Indian handloom sarees and heritage bridal ethnic wear. Highlights Banarasi and Kanjivaram silk collections, Silk Mark certification showcase, master artisan storytelling, and an ultra-responsive, mobile-first shopping interface.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tag">E-Commerce UI</span>
+                <span class="tag">Frontend Architecture</span>
+                <span class="tag">Responsive Layout</span>
+                <span class="tag">Modern Typography</span>
+                <span class="tag">Performance</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://vanyaheritage.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                  <span>Live Website</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+                <a href="https://github.com/abdussamad567" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                  <span>GitHub Profile</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: Ideal Public School Hasanpura -->
+          <article class="project-card">
+            <div class="project-media-wrap">
+              <div class="project-browser-bar">
+                <div class="browser-dots">
+                  <span class="b-dot red"></span>
+                  <span class="b-dot yellow"></span>
+                  <span class="b-dot green"></span>
+                </div>
+                <div class="browser-url-pill">
+                  <span>https://www.idealpublicschoolhasanpura.com/</span>
+                </div>
+                <span class="browser-badge">Project 03</span>
+              </div>
+              <div class="project-img-container">
+                <img 
+                  src="assets/ideal_school_preview.png" 
+                  alt="Ideal Public School Hasanpura — Official Portal Screenshot"
+                  class="project-preview-img zoomable-img"
+                >
+              </div>
+            </div>
+
+            <div class="project-info-wrap">
+              <div class="project-meta-top">
+                <span class="project-category">Institutional Portal &amp; Admissions</span>
+                <span class="project-year">2026</span>
+              </div>
+              
+              <h3 class="project-title">Ideal Public School Hasanpura</h3>
+              
+              <p class="project-desc">
+                Official institutional web portal and digital admissions system for Ideal Public School Hasanpura (Nurturing Excellence Since 2005). Features academic curriculum overviews, online admission inquiries, prospectus downloads, facility tours, and administrative notice boards.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tag">Institutional Web</span>
+                <span class="tag">Admissions Portal</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">SEO Architecture</span>
+                <span class="tag">Responsive UI</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://www.idealpublicschoolhasanpura.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                  <span>Live Website</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+                <a href="https://github.com/abdussamad567/ideal-public" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                  <span>GitHub Repository</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 10. CONTACT SECTION -->
+    <section class="contact-section" id="contact-section">
+      <div class="container contact-container">
+        
+        <div class="contact-grid">
+          
+          <!-- Contact Left: Channels -->
+          <div class="contact-info-col">
+            <span class="section-tag">/REACH OUT</span>
+            <h2 class="contact-big-title">Let’s talk.</h2>
+            <p class="contact-subtext">
+              Have a project, startup idea, or open role? Fill out the form or reach out directly. All valid inquiries are sent directly to <strong>abdussamad5826@gmail.com</strong>.
+            </p>
+
+            <div class="contact-direct-cards">
+              
+              <!-- Direct Phone -->
+              <a href="tel:+919608121613" class="direct-card" title="Call directly">
+                <div class="direct-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="direct-text">
+                  <span class="direct-label">Phone &amp; Call</span>
+                  <span class="direct-value">+91 96081 21613</span>
+                </div>
+                <span class="direct-action">Call ↗</span>
+              </a>
+
+              <!-- WhatsApp -->
+              <a href="https://wa.me/919608121613" target="_blank" rel="noopener noreferrer" class="direct-card" title="Chat on WhatsApp">
+                <div class="direct-icon wa-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                </div>
+                <div class="direct-text">
+                  <span class="direct-label">WhatsApp</span>
+                  <span class="direct-value">+91 96081 21613</span>
+                </div>
+                <span class="direct-action">Chat ↗</span>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/abdus-samad-7ba928380" target="_blank" rel="noopener noreferrer" class="direct-card" title="LinkedIn Profile">
+                <div class="direct-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </div>
+                <div class="direct-text">
+                  <span class="direct-label">LinkedIn Profile</span>
+                  <span class="direct-value">abdus-samad-7ba928380</span>
+                </div>
+                <span class="direct-action">Connect ↗</span>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/abdussamad567" target="_blank" rel="noopener noreferrer" class="direct-card" title="GitHub Profile">
+                <div class="direct-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </div>
+                <div class="direct-text">
+                  <span class="direct-label">GitHub Repos</span>
+                  <span class="direct-value">@abdussamad567</span>
+                </div>
+                <span class="direct-action">Follow ↗</span>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- Contact Right: Form with Real Email Dispatch -->
+          <div class="contact-form-col">
+            <form class="styled-form" id="contactForm" novalidate>
+              
+              <div class="form-group">
+                <label for="contactName" class="form-label">Name <span class="required-mark">*</span></label>
+                <input 
+                  type="text" 
+                  id="contactName" 
+                  name="name" 
+                  class="form-input" 
+                  placeholder="Your name or company" 
+                  required
+                >
+                <span class="field-error" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email or Phone <span class="required-mark">*</span></label>
+                <input 
+                  type="text" 
+                  id="contactEmail" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="name@company.com or phone" 
+                  required
+                >
+                <span class="field-error" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactProject" class="form-label">Project Requirements <span class="required-mark">*</span></label>
+                <textarea 
+                  id="contactProject" 
+                  name="project" 
+                  rows="4" 
+                  class="form-textarea" 
+                  placeholder="Tell me about your project, timeline, and goals..." 
+                  required
+                ></textarea>
+                <span class="field-error" id="projectError"></span>
+              </div>
+
+              <button type="submit" class="form-submit-btn" id="submitBtn">
+                <span class="btn-spinner" id="btnSpinner" aria-hidden="true"></span>
+                <span class="btn-text" id="btnText">Send Message</span>
+                <span class="btn-arrow">↗</span>
+              </button>
+
+              <!-- Live Submission Feedback Toast -->
+              <div class="form-toast success" id="formToastSuccess" aria-live="polite">
+                ✓ Message received! Your inquiry has been sent to <strong>abdussamad5826@gmail.com</strong>.
+              </div>
+              <div class="form-toast error" id="formToastError" aria-live="polite">
+                ⚠️ Unable to deliver message right now. Please try calling or WhatsApp directly.
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- 11. FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <!-- Footer Top Closing Statement -->
+      <div class="footer-top">
+        <h2 class="footer-tagline">
+          Building thoughtful digital products that look considered, work reliably, and solve real problems.
+        </h2>
+      </div>
+
+      <!-- Footer Three-Column Alignment -->
+      <div class="footer-cols">
+        
+        <div class="f-col">
+          <span class="f-heading">/Quick links</span>
+          <ul class="f-list">
+            <li><a href="#hero-section">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#services-section">Services</a></li>
+            <li><a href="#work-section">Works</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="f-col">
+          <span class="f-heading">/Social &amp; Code</span>
+          <ul class="f-list">
+            <li><a href="https://github.com/abdussamad567" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/abdus-samad-7ba928380" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://wa.me/919608121613" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="tel:+919608121613">Direct Call</a></li>
+          </ul>
+        </div>
+
+        <div class="f-col f-contact-col">
+          <span class="f-heading">/Direct Inquiries</span>
+          <a href="mailto:abdussamad5826@gmail.com" class="f-email-link">abdussamad5826@gmail.com</a>
+          <a href="tel:+919608121613" class="f-phone-link">+91 96081 21613</a>
+          <p class="f-loc">Based in India · Available Worldwide</p>
+        </div>
+
+      </div>
+
+      <!-- Oversized Brand Typography -->
+      <div class="footer-brand-huge">
+        ABDUS SAMAD
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="copyright" id="copyrightYear">© 2026 Abdus Samad. All rights reserved.</p>
+        <button class="back-to-top-btn" id="backToTop" aria-label="Back to top">
+          <span>Back to Top</span>
+          <span>↑</span>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for High Resolution Image Previews -->
+  <div class="lightbox-modal" id="lightboxModal" aria-hidden="true">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close modal">✕</button>
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast-popup" id="toastPopup" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

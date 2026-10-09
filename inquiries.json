@@ -1,0 +1,52 @@
+[
+  {
+    "id": "inq_1791573107136",
+    "timestamp": "2026-10-09T19:11:47.136Z",
+    "name": "Abdus Samad",
+    "contact": "samadshoaib0902@gmail.com",
+    "isEmail": true,
+    "project": "guqhwuiehiwuhiddgbhsabxjnsbxjsb",
+    "targetRecipient": "abdussamad5826@gmail.com",
+    "status": "activation_email_sent"
+  },
+  {
+    "id": "inq_1791573037176",
+    "timestamp": "2026-10-09T19:10:37.176Z",
+    "name": "Client Test",
+    "contact": "client@startup.io",
+    "isEmail": true,
+    "project": "Testing the portfolio direct contact delivery pipeline.",
+    "targetRecipient": "abdussamad5826@gmail.com",
+    "status": "activation_email_sent"
+  },
+  {
+    "id": "inq_1791572199451",
+    "timestamp": "2026-10-09T18:56:39.451Z",
+    "name": "Abdus Samad",
+    "contact": "samadshoaib0902@gmail.com",
+    "isEmail": true,
+    "project": "ajdude",
+    "targetRecipient": "abdussamad5826@gmail.com",
+    "status": "saved_locally"
+  },
+  {
+    "id": "inq_1791572033808",
+    "timestamp": "2026-10-09T18:53:53.808Z",
+    "name": "Sarah Chen",
+    "contact": "sarah@fintech.io",
+    "isEmail": true,
+    "project": "We need a high-performance MERN web application with modern design and dashboard analytics.",
+    "targetRecipient": "abdussamad5826@gmail.com",
+    "status": "saved_locally"
+  },
+  {
+    "id": "inq_1791571952577",
+    "timestamp": "2026-10-09T18:52:32.577Z",
+    "name": "Alex Rivera",
+    "contact": "alex@example.com",
+    "isEmail": true,
+    "project": "Looking for a fullstack developer to build a modern AI SaaS web application.",
+    "targetRecipient": "abdussamad5826@gmail.com",
+    "status": "saved_locally"
+  }
+]
